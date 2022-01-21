@@ -1,4 +1,5 @@
 import React from "react";
+import dotenv from "dotenv";
 import GoogleLogin from "react-google-login";
 import { Link } from "react-router-dom";
 import "../../helpers/common-style/auth-style.css";
@@ -17,6 +18,10 @@ const SignInUI = ({
   isVisible,
 }) => {
   const { email, password, errorMessage, successMessage, loading } = signinData;
+
+  //DOTENV CONFIG
+  dotenv.config();
+  const googleClientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 
   return (
     <div className="container-fluid p-0 m-0">
@@ -100,7 +105,7 @@ const SignInUI = ({
                       <i className="fab fa-google mx-2"></i>Login with Google
                     </button>
                   )}
-                  clientId="203822999175-ic2e949ccriqa983otoa5949dodi7iif.apps.googleusercontent.com"
+                  clientId={googleClientId}
                   buttonText="Login with Google"
                   onSuccess={responseSuccessGoogle}
                   onFailure={responseErrorGoogle}

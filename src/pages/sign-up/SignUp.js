@@ -17,15 +17,7 @@ const SignUp = () => {
     loading: false,
   });
 
-  const {
-    username,
-    email,
-    password1,
-    password2,
-    successMessage,
-    errorMessage,
-    loading,
-  } = signupData;
+  const { username, email, password1, password2 } = signupData;
 
   const [isVisible, setIsVisible] = useState(false);
 

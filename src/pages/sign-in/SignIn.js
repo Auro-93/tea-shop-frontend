@@ -6,7 +6,6 @@ import { signin, googleLogin } from "../../api/auth";
 import {
   setAuth,
   isAuthenticated,
-  setLocalStorage,
 } from "../../helpers/storage&cookies/storage&cookies.js";
 import { AuthContext } from "../../helpers/contexts/AuthContext.js";
 
