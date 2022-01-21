@@ -1,20 +1,22 @@
-import React from 'react';
-import { Route, Redirect } from 'react-router';
-import { isAuthenticated } from '../../helpers/storage&cookies/storage&cookies';
+import React from "react";
+import { Route, Redirect } from "react-router";
+import { isAuthenticated } from "../../helpers/storage&cookies/storage&cookies";
 
-const AdminRoute = ({component : Component, ...rest}) => {
+//ADMIN PRIVATE ROUTE --> IF NOT ADMIN REDIRECT TO HOMEPAGE
 
-    return (
-        <Route
-            {...rest}
-            render = {(props) => 
-                isAuthenticated() && isAuthenticated().role === 1 ? 
-                <Component  {...props} /> 
-                :
-                <Redirect to = '/' />   
-            }
-        />
-    )
-}
+const AdminRoute = ({ component: Component, ...rest }) => {
+  return (
+    <Route
+      {...rest}
+      render={(props) =>
+        isAuthenticated() && isAuthenticated().role === 1 ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/" />
+        )
+      }
+    />
+  );
+};
 
-export default AdminRoute
+export default AdminRoute;

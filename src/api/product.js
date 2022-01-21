@@ -6,6 +6,7 @@ import { getCookies } from "../helpers/storage&cookies/storage&cookies";
 dotenv.config();
 const baseUrl = process.env.REACT_APP_SERVER_BASE_URL;
 
+//CONFIG AXIOS REQUEST
 const config = {
   headers: {
     "Content-Type": "application/json",
@@ -13,6 +14,7 @@ const config = {
   },
 };
 
+//GET PRODUCTS
 export const fetchProducts = async (name, category, sort, page, limit) => {
   const response = await axios.get(
     `${baseUrl}/api/products/get-products?name=${name}&category=${category}&sort=${sort}&page=${page}&limit=${limit}`
@@ -20,6 +22,7 @@ export const fetchProducts = async (name, category, sort, page, limit) => {
   return response;
 };
 
+//ADD PRODUCT
 export const postProduct = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/products/create-product`,
@@ -29,6 +32,7 @@ export const postProduct = async (data) => {
   return response;
 };
 
+//EDIT PRODUCT
 export const editProduct = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/products/edit-product`,
@@ -38,6 +42,7 @@ export const editProduct = async (data) => {
   return response;
 };
 
+//REMOVE PRODUCT
 export const deleteProduct = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/products/delete-product`,

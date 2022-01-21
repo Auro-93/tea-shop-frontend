@@ -6,12 +6,7 @@ import { getCookies } from "../helpers/storage&cookies/storage&cookies";
 dotenv.config();
 const baseUrl = process.env.REACT_APP_SERVER_BASE_URL;
 
-const config1 = {
-  headers: {
-    "Content-Type": "application/json",
-  },
-};
-
+//CONFIG AXIOS REQUEST
 const config2 = {
   headers: {
     "Content-Type": "application/json",
@@ -19,6 +14,7 @@ const config2 = {
   },
 };
 
+//USER: UPDATE WISHLIST
 export const updateWishlistUser = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/user/wishlist/update-wishlist-user`,
@@ -28,6 +24,7 @@ export const updateWishlistUser = async (data) => {
   return response;
 };
 
+//USER: GET WISHLIST
 export const getWishlistUser = async (name, sort, page) => {
   const response = await axios.get(
     `${baseUrl}/api/user/wishlist/get-wishlist-user?name=${name}&sort=${sort}&page=${page}`,
@@ -36,6 +33,7 @@ export const getWishlistUser = async (name, sort, page) => {
   return response;
 };
 
+//GUEST: UPDATE WISHLIST
 export const updateWishlistGuest = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/user/wishlist/update-wishlist-guest`,
@@ -45,6 +43,7 @@ export const updateWishlistGuest = async (data) => {
   return response;
 };
 
+//GUEST: GET WISHLIST
 export const getWishlistGuest = async (data, name, sort, page) => {
   const response = await axios.post(
     `${baseUrl}/api/user/wishlist/get-wishlist-guest?name=${name}&sort=${sort}&page=${page}`,

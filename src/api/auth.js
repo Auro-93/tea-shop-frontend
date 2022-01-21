@@ -6,6 +6,7 @@ import { getCookies } from "../helpers/storage&cookies/storage&cookies";
 dotenv.config();
 const baseUrl = process.env.REACT_APP_SERVER_BASE_URL;
 
+//CONFIG AXIOS REQUEST
 const config = {
   headers: {
     "Content-Type": "application/json",
@@ -13,6 +14,7 @@ const config = {
   },
 };
 
+//SIGN UP
 export const signup = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/auth/sign-up`,
@@ -22,6 +24,7 @@ export const signup = async (data) => {
   return response;
 };
 
+//AUTH ACCOUNT AFTER SIGN-UP
 export const accountAuth = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/auth/account-authentication/:token`,
@@ -31,6 +34,7 @@ export const accountAuth = async (data) => {
   return response;
 };
 
+//SIGN-IN
 export const signin = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/auth/sign-in`,
@@ -40,6 +44,7 @@ export const signin = async (data) => {
   return response;
 };
 
+//LOGIN WITH GOOGLE
 export const googleLogin = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/auth/google-login`,
@@ -49,6 +54,7 @@ export const googleLogin = async (data) => {
   return response;
 };
 
+//FORGOT PASSWORD
 export const forgotPassword = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/auth/forgot-password`,
@@ -58,6 +64,7 @@ export const forgotPassword = async (data) => {
   return response;
 };
 
+//RESET PASSWORD
 export const resetPassword = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/auth/reset-password/:token`,
@@ -67,6 +74,7 @@ export const resetPassword = async (data) => {
   return response;
 };
 
+//GET USER BY EMAIL
 export const getUserByEmail = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/auth/getUserByEmail`,
@@ -76,6 +84,7 @@ export const getUserByEmail = async (data) => {
   return response;
 };
 
+//UPDATE USER EMAIL
 export const updateEmail = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/auth/update-email`,
@@ -85,6 +94,7 @@ export const updateEmail = async (data) => {
   return response;
 };
 
+//UPDATE USERNAME
 export const updateUsername = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/auth/update-username`,

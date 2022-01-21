@@ -6,6 +6,7 @@ import { getCookies } from "../helpers/storage&cookies/storage&cookies";
 dotenv.config();
 const baseUrl = process.env.REACT_APP_SERVER_BASE_URL;
 
+//CONFIG AXIOS REQUEST
 const config1 = {
   headers: {
     "Content-Type": "application/json",
@@ -20,7 +21,6 @@ const config2 = {
 };
 
 // ADD ORDER FOR GUESTS
-
 export const addOrderGuest = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/order/add-order-guest`,
@@ -31,7 +31,6 @@ export const addOrderGuest = async (data) => {
 };
 
 //ADD ORDERS FOR USERS
-
 export const addOrderUser = async (data) => {
   const response = await axios.post(
     `${baseUrl}/api/order/add-order-user`,
@@ -42,7 +41,6 @@ export const addOrderUser = async (data) => {
 };
 
 //GET ORDERS OF A SPECIFIC USER
-
 export const getUserOrders = async (name, status, sort, page) => {
   const response = await axios.get(
     `${baseUrl}/api/order/get-user-orders?name=${name}&status=${status}&sort=${sort}&page=${page}`,
@@ -52,7 +50,6 @@ export const getUserOrders = async (name, status, sort, page) => {
 };
 
 //ADMIN: GET ALL ORDERS IN DB
-
 export const getAllOrders = async (id, status, sort, page) => {
   const response = await axios.get(
     `${baseUrl}/api/order/get-all-orders?id=${id}&status=${status}&sort=${sort}&page=${page}`,
@@ -62,7 +59,6 @@ export const getAllOrders = async (id, status, sort, page) => {
 };
 
 //ADMIN: UPDATE ORDER STATUS
-
 export const updateOrderStatus = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/order/update-order-status`,
@@ -73,7 +69,6 @@ export const updateOrderStatus = async (data) => {
 };
 
 //ADMIN: GET ALL CUSTOMERS
-
 export const getAllCustomers = async () => {
   const response = await axios.get(
     `${baseUrl}/api/order/get-all-customers`,
@@ -83,7 +78,6 @@ export const getAllCustomers = async () => {
 };
 
 //ADMIN: GET TOTAL INCOME
-
 export const getTotalIncome = async () => {
   const response = await axios.get(
     `${baseUrl}/api/order/get-total-income`,
@@ -93,7 +87,6 @@ export const getTotalIncome = async () => {
 };
 
 //ADMIN : GET TOTAL NUM OF PROD SALED
-
 export const getTotalProdSaled = async () => {
   const response = await axios.get(
     `${baseUrl}/api/order/get-prod-saled`,

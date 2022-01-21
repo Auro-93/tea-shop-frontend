@@ -6,6 +6,7 @@ import { getCookies } from "../helpers/storage&cookies/storage&cookies";
 dotenv.config();
 const baseUrl = process.env.REACT_APP_SERVER_BASE_URL;
 
+//CONFIG AXIOS REQUEST
 const config1 = {
   headers: {
     "Content-Type": "application/json",
@@ -19,6 +20,7 @@ const config2 = {
   },
 };
 
+//USER: ADD TO CART
 export const addToCartUser = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/user/cart/add-item-to-cart-user`,
@@ -28,6 +30,7 @@ export const addToCartUser = async (data) => {
   return response;
 };
 
+//GUEST: ADD TO CART
 export const addToCartGuest = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/user/cart/add-item-to-cart-guest`,
@@ -37,6 +40,7 @@ export const addToCartGuest = async (data) => {
   return response;
 };
 
+//USER: REMOVE FROM CART
 export const removeFromCartUser = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/user/cart/delete-cart-item-user`,
@@ -46,6 +50,7 @@ export const removeFromCartUser = async (data) => {
   return response;
 };
 
+//GUEST: REMOVE FROM CART
 export const removeFromCartGuest = async (data) => {
   const response = await axios.put(
     `${baseUrl}/api/user/cart/delete-cart-item-guest`,
@@ -55,6 +60,7 @@ export const removeFromCartGuest = async (data) => {
   return response;
 };
 
+//USER: GET CART ITEMS
 export const getCartItemsUser = async (name, sort, page) => {
   const response = await axios.get(
     `${baseUrl}/api/user/cart/get-cart-items-user?name=${name}&sort=${sort}&page=${page}`,
@@ -63,6 +69,7 @@ export const getCartItemsUser = async (name, sort, page) => {
   return response;
 };
 
+//GUEST: GET CART ITEMS
 export const getCartItemsGuest = async (data, name, sort, page) => {
   const response = await axios.post(
     `${baseUrl}/api/user/cart/get-cart-items-guest?name=${name}&sort=${sort}&page=${page}`,
