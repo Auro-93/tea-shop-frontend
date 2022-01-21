@@ -105,7 +105,7 @@ const SignInUI = ({
                       <i className="fab fa-google mx-2"></i>Login with Google
                     </button>
                   )}
-                  clientId={googleClientId}
+                  clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
                   buttonText="Login with Google"
                   onSuccess={responseSuccessGoogle}
                   onFailure={responseErrorGoogle}
