@@ -1,0 +1,52 @@
+.error-bg {
+  background-image: url("../../assets/images/pink-flower2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.error-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8rem 1rem;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+@media screen and (min-width: 400px) {
+  .error-container {
+    padding: 4rem 8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .error-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .error-container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .error-container {
+    max-width: 1000px;
+  }
+}
+
+.error-container h1 {
+  font-size: 6rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.error-container p {
+  font-size: 1.5rem;
+}
+
+.error-container .auth-back-to-home {
+  margin-top: 6rem;
+}

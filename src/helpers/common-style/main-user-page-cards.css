@@ -1,0 +1,63 @@
+.body-container {
+  padding: 5rem 0;
+}
+
+.profile-cards-container {
+  background-color: rgba(224, 235, 198, 0.2);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-top: 3rem;
+}
+
+.profile-cards-title {
+  margin-bottom: 2rem;
+  color: var(--secondary);
+}
+
+.profile-cards-container .card-icon {
+  transform: scale(1.8);
+  color: var(--primary2);
+  transition: all 0.3s linear;
+}
+.custom-card-container {
+  flex-wrap: wrap;
+}
+.profile-cards-container .custom-card {
+  border: 1.5px solid var(--primary);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 3rem 0rem;
+  margin-bottom: 1rem;
+  min-width: 200px;
+
+  flex: 1;
+  transition: all 0.3s linear;
+}
+
+.profile-cards-container .custom-card:hover,
+.profile-cards-container .custom-card:active {
+  background-color: var(--primary);
+  border: none;
+  box-shadow: none;
+}
+
+.profile-cards-container .custom-card:hover .card-icon,
+.profile-cards-container .custom-card:active .card-icon {
+  color: var(--secondary);
+}
+.profile-cards-container .custom-card .card-title {
+  color: var(--primary2);
+  transition: all 0.3s linear;
+}
+
+.profile-cards-container .custom-card:hover .card-title,
+.profile-cards-container .custom-card:active .card-title {
+  color: var(--secondary);
+}
+
+@media screen and (min-width: 700px) {
+  .profile-cards-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+  }
+}

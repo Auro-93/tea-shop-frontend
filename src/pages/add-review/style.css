@@ -1,0 +1,119 @@
+.add-review-page-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 899px) {
+  .add-review-page-container {
+    margin-bottom: 10rem;
+  }
+}
+
+.add-review-form-container {
+  background-color: rgba(239, 245, 230, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: 3rem 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.add-review-form-item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.add-review-form-item-2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-review-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+
+.add-review-prod-name {
+  color: rgb(53, 99, 53);
+  margin-bottom: 2rem;
+}
+
+.stars-add-review-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-review-rating-description {
+  padding: 1rem;
+  background-color: var(--primary);
+  border-radius: 5px;
+  margin: 0 0.6rem;
+  letter-spacing: 0.1rem;
+}
+
+.add-review-form-item-2 label {
+  font-weight: bold;
+  color: rgb(93, 158, 93);
+  letter-spacing: 0.1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.username-add-review > span {
+  color: rgb(146, 143, 143);
+  margin: 0 0.5rem;
+}
+
+textarea#content {
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .add-review-form-container {
+    padding: 3rem;
+    width: 90%;
+    margin: 3rem;
+  }
+  .stars-add-review-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-review-img {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .add-review-form-container {
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem;
+    width: 90%;
+    margin: 3rem;
+  }
+  .add-review-prod-name {
+    margin-bottom: o;
+  }
+  .add-review-form-item-2 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .stars-add-review-container {
+    justify-content: start;
+  }
+}

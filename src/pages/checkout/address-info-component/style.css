@@ -1,0 +1,51 @@
+.accordion-address-body {
+  padding: 2rem 0.4rem;
+}
+
+.address-label {
+  font-size: 0.8rem !important;
+}
+
+.edit-address-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editable-address {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 380px) {
+  .accordion-address-body {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .edit-address-block {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .editable-address {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .flex-address-form {
+    display: flex;
+  }
+  .flex-input-address {
+    margin-right: 1rem;
+  }
+  .accordion-address-body {
+    padding: 2rem;
+  }
+  .address-label {
+    font-size: 1rem !important;
+  }
+}

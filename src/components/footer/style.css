@@ -1,0 +1,93 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../assets/images/leaf2.jpg");
+  color: var(--primary2);
+  width: 100%;
+}
+
+.footer-row {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(227, 240, 197, 0.6);
+}
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 0 0.5rem;
+  color: var(--secondary) !important;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.footer-contact {
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.footer-contact p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-contact {
+    font-size: 0.9rem;
+  }
+  .social-icon {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer {
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .footer-contact p {
+    flex-direction: row;
+    margin-bottom: 0;
+    margin-right: 3rem;
+  }
+
+  .social-icon {
+    font-size: 2rem;
+  }
+
+  .max-width-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .max-width-footer {
+    width: 1700px;
+    margin: 0 auto;
+  }
+}

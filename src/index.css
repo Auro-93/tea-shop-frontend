@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+.App {
+  position: relative;
+}
+
+:root {
+  --primary: #e0ebc6;
+  --primary2: #a7bb7b;
+  --secondary: #eea2a7;
+  --tertiary: #eed3d5;
+  --bg: #eeebda;
+
+  --processing: rgb(201, 195, 195);
+  --processed: rgb(93, 26, 137, 0.5);
+  --shipped: rgba(37, 93, 234, 0.6);
+  --received: rgba(22, 147, 20, 0.6);
+}
+
+.bg-primary-custom {
+  background-color: var(--primary);
+}
+.bg-secondary-custom {
+  background-color: var(--secondary);
+}
+.bg-tertiary-custom {
+  background-color: var(--tertiary);
+}
+
+.bg-bg-custom {
+  background-color: var(--bg);
+}
+
+.color-primary-custom {
+  color: var(--primary);
+}
+.color-primary2-custom {
+  color: var(--primary2);
+}
+.color-secondary-custom {
+  color: var(--secondary);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.btn-close:focus,
+.btn:focus {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 320px) {
+  input::placeholder {
+    font-size: 0.7rem;
+  }
+}
+
+.custom-button {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.custom-button:hover,
+.custom-button:active {
+  box-shadow: none;
+}
+
+.standard-secondary-button {
+  background-color: var(--secondary);
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.standard-secondary-button:hover {
+  background-color: #b67a7eab;
+  color: white;
+}
+
+.standard-primary-button {
+  background-color: var(--primary);
+  color: rgba(0, 0, 0, 0.534);
+  transition: all 0.2s ease-out;
+  letter-spacing: 0.1rem;
+}
+
+.standard-primary-button:hover {
+  background-color: #b5be9ee1;
+  color: white;
+}
+
+.outline-secondary-button {
+  color: var(--secondary);
+  background: linear-gradient(to left, white 50%, var(--secondary) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 1px solid var(--secondary);
+}
+
+.outline-secondary-button:hover,
+.outline-secondary-button:active {
+  background-position: left bottom;
+  color: white;
+}
+
+.outline-primary2-button {
+  color: var(--primary2);
+  background: linear-gradient(to left, white 50%, var(--primary2) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  border: 1px solid var(--primary2);
+}
+
+.outline-primary2-button:hover,
+.outline-primary2-button:active {
+  background-position: left bottom;
+  color: white;
+}
+
+/*CUSTOM SCROLLBARS*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary2);
+  border-radius: 5px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary2) transparent;
+}
+
+.max-width-container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20rem 0 8rem;
+}
+
+@media screen and (min-width: 290px) {
+  .max-width-container {
+    padding: 15rem 0 8rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .max-width-container {
+    padding: 13rem 0 8rem;
+  }
+}

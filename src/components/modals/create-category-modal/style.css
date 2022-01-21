@@ -1,0 +1,47 @@
+.admin-custom-modal {
+  background-image: url("../../../assets/images/modal-leaf.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-color: #f7f7f7;
+}
+
+.admin-custom-modal input:focus,
+.admin-custom-modal .custom-select:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px,
+    rgba(238, 162, 167, 0.5) 0px 0px 0px 2px !important;
+  border: none !important;
+}
+
+.admin-custom-modal .custom-select option {
+  border: 1px solid rgb(206, 212, 218);
+}
+
+select option:checked:after {
+  content: attr(title);
+  background: #666;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border: none;
+}
+
+.admin-custom-modal .custom-select option:checked {
+  background: linear-gradient(var(--tertiary), var(--tertiary));
+  background-color: var(--tertiary) !important; /* for IE */
+  color: #000000 !important;
+}
+
+.admin-custom-modal .custom-select .custom-option:hover {
+  background-color: var(--tertiary) !important;
+}
+
+.admin-custom-modal .modal-footer {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#chooseParentCategory option {
+  overflow-y: auto;
+}

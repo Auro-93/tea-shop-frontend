@@ -1,0 +1,46 @@
+@media screen and (max-width: 899px) {
+  .manage-page {
+    margin-bottom: 10rem;
+  }
+}
+
+.category-container {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgba(238, 211, 213, 0.4);
+  border-radius: 5px;
+}
+
+.category-item {
+  font-size: 1.1rem;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.category-item:hover,
+.category-item:active {
+  color: white;
+  background-color: rgba(221, 180, 183, 1);
+}
+
+.subcategory-item li {
+  background-color: rgba(238, 211, 213, 0.6);
+  font-size: 0.9rem;
+  transition: all 0.2s linear;
+}
+
+.subcategory-item li:hover,
+.subcategory-item li:active {
+  background-color: var(--secondary);
+}
+.delete-category,
+.edit-category {
+  transition: all 0.2s linear;
+}
+.delete-category:hover,
+.delete-category:active,
+.edit-category:hover,
+.edit-category:active {
+  color: rgb(89, 107, 89);
+}

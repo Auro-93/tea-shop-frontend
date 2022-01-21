@@ -1,0 +1,67 @@
+.overscroll-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.profile-sidebar-info-header {
+  background-color: #ffd9de;
+  background-image: linear-gradient(315deg, #f0c2c0 0%, #f3f3e6 74%);
+}
+
+.profile-sidebar-info-header .username {
+  font-size: 1rem;
+}
+.profile-sidebar-info-header .email {
+  font-size: 0.8rem;
+}
+
+.profile-sidebar-info-header .no-image {
+  background-image: url("../../assets/images/user.png");
+  background-color: var(--primary);
+}
+
+.profile-sidebar-info-header .profile-sidebar-image {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.profile-sidebar-info-header button {
+  font-size: 0.8rem;
+  background-color: var(--primary);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all 0.2s linear;
+}
+
+.profile-sidebar-info-header button:hover,
+.profile-sidebar-info-header button:active {
+  box-shadow: none;
+  filter: saturate(60%);
+}
+
+.profile-sidebar-info-header .logout-icon {
+  transform: scale(0.9);
+  transform: translateY(0.1rem);
+}
+
+.profile-menu-elements {
+  margin-bottom: 4rem;
+}
+
+.profile-menu-elements a:hover,
+.profile-menu-elements a:active {
+  color: var(--primary2) !important;
+}
+
+.profile-menu-elements a {
+  color: var(--secondary) !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+}

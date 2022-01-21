@@ -1,0 +1,134 @@
+.auth-layout-column1 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.auth-layout-column2 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: saturate(80%);
+  filter: opacity(40%);
+  transform: scaleX(-1);
+}
+
+.auth-layout-column2 .logo-svg {
+  width: 5rem;
+  height: 5rem;
+}
+
+.auth-layout-column2 .logo-svg-l {
+  transform: scaleX(-1);
+}
+
+.auth-title {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: rgb(237, 247, 223);
+}
+
+.auth-label {
+  font-weight: bold;
+}
+
+.auth-custom-input {
+  position: relative;
+}
+
+.pwd-visibility {
+  position: absolute;
+  right: 2rem;
+  bottom: 15%;
+  cursor: pointer;
+}
+
+.google-login .fab {
+  padding: 0.4rem;
+  border: 1px solid;
+  border-radius: 100%;
+}
+
+.google-login:focus {
+  box-shadow: none;
+}
+
+.auth-form-switch-link {
+  display: inline-block;
+  margin-left: 0.5rem;
+  transition: all 0.2s linear;
+}
+
+.auth-form-switch-link:hover,
+.auth-form-switch-link:active {
+  font-weight: bolder;
+}
+
+.auth-back-to-home {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.auth-back-to-home a {
+  color: black;
+}
+
+.auth-back-to-home > a > p > span {
+  font-family: "Handlee", cursive;
+}
+
+.auth-back-to-home > a > p > span > span {
+  color: var(--secondary);
+  transition: all 0.3s linear;
+}
+
+.auth-back-to-home > a > p:hover,
+.auth-back-to-home > a > p:active {
+  filter: opacity(80%);
+  transform: scale(1.05);
+  color: black;
+}
+
+.auth-layout-column1 .auth-back-to-home {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 577px) {
+  .auth-form-container {
+    border-radius: 10px;
+  }
+
+  .auth-title {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-form-container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+
+  .auth-layout-column1 .auth-back-to-home {
+    display: none;
+  }
+  .auth-layout-column2 .auth-back-to-home {
+    transform: scaleX(-1);
+  }
+  .auth-layout-column2 .auth-back-to-home > p > a > span {
+    font-size: 2.5rem;
+    z-index: 9999999;
+  }
+  .auth-form-container {
+    min-width: 500px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .auth-form-container {
+    max-width: 950px;
+  }
+}

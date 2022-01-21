@@ -1,0 +1,67 @@
+.resetpassword-layout-column1 {
+  background-image: url("../../assets/images/yellow3.jpg");
+}
+
+.resetpassword-layout-column2 {
+  background-image: url("../../assets/images/yellow1.jpg");
+}
+
+.resetpassword-form-container {
+  background: linear-gradient(
+    to bottom right,
+    rgba(230, 199, 97, 0.6) 10%,
+    rgba(238, 235, 173, 0.3) 90%
+  );
+}
+
+.resetpassword-title {
+  background-image: url("../../assets/images/yellow2.jpg");
+}
+
+.resetpassword-label {
+  color: #6a2c03;
+}
+
+.resetpassword-input:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(189, 147, 92) 0px 0px 0px 3px !important;
+}
+
+.resetpassword-yellow-button {
+  color: white;
+  background: linear-gradient(
+    to left,
+    rgba(188, 137, 79, 0.9) 50%,
+    rgba(255, 255, 255, 0.2) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.resetpassword-yellow-button:hover,
+.resetpassword-yellow-button:active {
+  background-position: left bottom;
+  color: #6a2c03;
+  border: 1px solid #6a2c03;
+}
+
+.resetpassword-form-switch-link {
+  color: #6a2c03;
+  border-bottom: 0.8px solid #6a2c03;
+}
+
+.resetpassword-form-switch-link:hover,
+.resetpassword-form-switch-link:active {
+  border-bottom: 2px solid;
+  color: #6a2c03;
+}
+
+@media screen and (min-width: 768px) {
+  .resetpassword-page-container-bg {
+    background-color: rgba(230, 199, 97, 0.6);
+  }
+
+  .resetpassword-layout-column1 {
+    background-image: url("../../assets/images/yellow1.jpg");
+  }
+}

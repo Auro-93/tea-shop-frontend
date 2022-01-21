@@ -1,0 +1,295 @@
+.admin-orders-container {
+  padding: 4rem 0;
+}
+
+@media screen and (max-width: 899px) {
+  .admin-orders-container {
+    margin-bottom: 10rem;
+  }
+}
+
+.admin-order-statistics-main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.admin-order-statistics-card-bg {
+  padding: 9rem;
+  flex: 1;
+  margin: 1rem 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all 0.2s linear;
+}
+.admin-order-statistics-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s linear;
+}
+
+.admin-order-statistics-card > span:nth-child(2) {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.admin-order-statistics-card > span:nth-child(3) {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.admin-order-statistics-card:hover,
+.admin-order-statistics-card:active {
+  background-color: rgba(128, 56, 56, 0.2);
+}
+
+.stat-customer-card-bg {
+  background-image: url("../../assets/images/pastel2.jpg");
+  color: #337da1;
+}
+.stat-customer-card-bg:hover,
+.stat-customer-card-bg-active {
+  color: #fbfeff;
+}
+.stat-total-orders-card-bg {
+  background-image: url("../../assets/images/pastel4.jpg");
+  color: #e2a6a6;
+}
+.stat-total-orders-card-bg:hover,
+.stat-total-orders-card-bg:active {
+  color: #634d4d;
+}
+
+.stat-total-income-card-bg {
+  background-image: url("../../assets/images/pastel3.jpg");
+  color: #847291;
+}
+.stat-total-income-card-bg:hover,
+.stat-total-income-card-bg:active {
+  color: #240c36d7;
+}
+.stat-total-products-card-bg {
+  background-image: url("../../assets/images/pastel1.jpg");
+  color: #682f58;
+}
+.stat-total-products-card-bg:hover,
+.stat-total-products-card-bg:active {
+  color: #fad6f0;
+}
+
+.table-admin-orders {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.table-admin-orders .table-title {
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.admin-order-filters-icons-container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #9fb9e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.admin-order-filters-icons-container > div:first-child {
+  padding: 0.5rem;
+}
+
+.admin-order-filters-icons-container:hover,
+.admin-order-filters-icons-container:active {
+  background-color: #6983aa;
+  box-shadow: none;
+}
+.admin-order-filters-icons-container:hover .dropdown-admin-order-filters,
+.admin-order-filters-icons-container:active .dropdown-admin-order-filters {
+  display: block;
+}
+
+.dropdown-admin-order-filters {
+  position: absolute;
+  top: 1.9rem;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown-admin-order-filters div {
+  font-size: 0.7rem;
+  text-align: left;
+  color: black;
+  padding: 0.6rem;
+  letter-spacing: 0.02rem;
+  transition: all 0.2s linear;
+}
+
+.dropdown-admin-order-filters div:first-child {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.dropdown-admin-order-filters div:last-child {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.dropdown-admin-order-filters div:hover,
+.dropdown-admin-order-filters div:active {
+  background-color: #6983aa;
+  color: white;
+}
+
+.admin-orders-search-input {
+  background-image: url("../../assets/images/search.svg");
+  background-repeat: no-repeat;
+  background-size: 8%;
+  background-position: 97% center;
+  border: 1px solid #444;
+}
+
+.order-status-container {
+  padding: 0.6rem;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  letter-spacing: 0.1rem;
+  flex: 1;
+}
+
+.edit-order-status-select-container {
+  flex: 1;
+}
+
+.edit-order-status-icon {
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.edit-order-status-icon:hover,
+.edit-order-status-icon:active {
+  color: #eee5e4;
+}
+.update-status-icons {
+  background-color: #9fb9e0;
+  color: white;
+  padding: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.update-status-icons:hover,
+.update-status-icons:active {
+  filter: saturate(0.2);
+}
+
+.check-update-order-status-icon-container {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.back-order-status-icon-container {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.display-payedAt {
+  display: none;
+}
+
+.td-invisible {
+  display: none;
+}
+
+.order-date-sm {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+@media screen and (min-width: 375px) {
+  .admin-order-filters-icons-container > div:first-child {
+    padding: 0.5rem;
+  }
+  .dropdown-admin-order-filters div {
+    padding: 0.6rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .table-admin-orders .table-title {
+    font-size: 1.3rem;
+  }
+  .admin-order-filters-icons-container > div:first-child {
+    padding: 0.7rem;
+  }
+  .dropdown-admin-order-filters {
+    top: 2.5rem;
+  }
+  .dropdown-admin-order-filters div {
+    font-size: 1rem;
+    padding: 0.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .update-status-icons {
+    padding: 0.4rem;
+  }
+}
+@media screen and (min-width: 650px) {
+  .table-admin-orders .table-title {
+    font-size: 1.3rem;
+  }
+  .admin-order-filters-icons-container > div:first-child {
+    padding: 1rem;
+  }
+  .dropdown-admin-order-filters {
+    top: 3rem;
+  }
+  .dropdown-admin-order-filters div {
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .admin-order-statistics-main-container {
+    padding: 2rem 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .admin-order-statistics-card-bg {
+    margin: 2rem 1rem;
+  }
+  .display-payedAt {
+    display: table-cell;
+  }
+  .td-invisible {
+    display: table-cell;
+  }
+  .order-date-sm {
+    display: none;
+  }
+  .admin-orders-container {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .admin-orders-container {
+    padding: 4rem 5rem;
+  }
+}

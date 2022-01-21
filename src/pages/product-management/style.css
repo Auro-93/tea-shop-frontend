@@ -1,0 +1,53 @@
+@media screen and (max-width: 899px) {
+  .manage-page {
+    margin-bottom: 10rem;
+  }
+}
+
+.manage-product-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  transition: all 0.2s linear;
+}
+
+.manage-prod-icon {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--secondary);
+  transform: scale(0.6);
+  transition: all 0.2s linear;
+}
+
+.product-element:hover .manage-product-layer,
+.product-element:active .manage-product-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.manage-product-layer:hover .manage-prod-icon,
+.manage-product-layer:active .manage-prod-icon {
+  transform: scale(1);
+}
+
+.manage-prod-edit:hover,
+.manage-prod-edit:active,
+.manage-prod-delete:hover,
+.manage-prod-delete:active {
+  filter: saturate(30%);
+}
+
+.admin-items-count {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--primary2);
+  color: white;
+  letter-spacing: 0.1rem;
+  border-radius: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

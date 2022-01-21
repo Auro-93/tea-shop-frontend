@@ -1,0 +1,7 @@
+.custom-modal {
+  z-index: 1000000000;
+}
+
+.custom-modal .modal-no-outline:focus {
+  box-shadow: none;
+}

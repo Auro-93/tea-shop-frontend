@@ -1,0 +1,208 @@
+@media screen and (max-width: 899px) {
+  .user-reviews-page-container {
+    margin-bottom: 10rem;
+  }
+}
+
+.user-reviews-page-container {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.no-reviews-container {
+  width: 100%;
+  background-color: rgba(239, 245, 230, 0.5);
+  margin: 3rem 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.no-reviews-container .fas {
+  color: var(--primary2);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.no-reviews-container a {
+  color: var(--primary2);
+  font-weight: bold;
+  transition: all 0.2s linear;
+}
+
+.no-reviews-container a:hover,
+.no-reviews-container a:active {
+  filter: brightness(60%);
+}
+
+.user-reviews-form-container {
+  background-color: rgba(239, 245, 230, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.review-component-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.review-component-card-item-1 {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.review-component-card-item-2 {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.review-card-component-img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+
+.review-card-component-product-name {
+  font-weight: bold;
+  color: rgb(56, 102, 56);
+  letter-spacing: 0.1rem;
+}
+
+.review-component-card-item-2 .stars-add-review-container {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.review-component-content-paragraph {
+  position: relative;
+  padding: 2rem;
+  background-color: rgba(240, 233, 234, 0.5);
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.review-component-content-paragraph h5 {
+  align-self: start;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+.review-component-content-paragraph .review-username {
+  position: absolute;
+  font-style: italic;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  color: var(--primary2);
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  padding: 0rem 1rem;
+}
+
+.remove-review-item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  background-color: var(--bg);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.remove-review-item:hover,
+.remove-review-item:active {
+  background-color: rgb(209, 205, 200);
+}
+
+.review-date-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  background-color: var(--tertiary);
+}
+
+@media screen and (min-width: 700px) {
+  .no-reviews-container {
+    width: 90%;
+  }
+  .user-reviews-form-container {
+    width: 90%;
+  }
+  .review-card-component-img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .review-component-card-item-1 {
+    width: 90%;
+  }
+  .review-component-card-item-2 {
+    padding: 0 2rem 2.5rem;
+    width: 90%;
+  }
+  .review-component-card {
+    padding: 3rem 2rem;
+    width: 90%;
+  }
+  .review-component-content-paragraph {
+    padding: 4rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .no-reviews-container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .no-reviews-container {
+    width: 60%;
+  }
+  .user-reviews-form-container {
+    width: 80%;
+  }
+  .review-component-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem;
+  }
+  .review-component-card-item-1 {
+    padding-right: 2rem;
+    width: 30%;
+  }
+  .review-component-card-item-2 {
+    padding: 0 2rem 2.5rem;
+    width: 70%;
+  }
+}

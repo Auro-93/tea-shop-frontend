@@ -1,0 +1,92 @@
+.signin-layout-column1 {
+  background-image: url("../../assets/images/leaf2.jpg");
+}
+
+.signin-layout-column2 {
+  background-image: url("../../assets/images/green4.jpg");
+}
+
+.signin-form-container {
+  background: linear-gradient(
+    to bottom right,
+    rgba(209, 226, 181, 0) 10%,
+    rgba(209, 226, 181, 0.8) 90%
+  );
+}
+
+.signin-title {
+  background-image: url("../../assets/images/green.jpg");
+}
+
+.signin-label {
+  color: rgba(28, 82, 49, 1);
+}
+
+.signin-input:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+    rgb(178, 209, 153) 0px 0px 0px 3px !important;
+}
+
+.signin-outline-primary-button {
+  color: white;
+  background: linear-gradient(
+    to left,
+    rgba(28, 82, 49, 0.8) 50%,
+    rgba(255, 255, 255, 0.5) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.signin-outline-primary-button:hover,
+.signin-outline-primary-button:active {
+  background-position: left bottom;
+  color: rgba(28, 82, 49, 0.8);
+  border: 1px solid rgba(28, 82, 49, 0.8);
+}
+
+.signin-primary-button {
+  color: white;
+  background: linear-gradient(
+    to left,
+    #5b8b5a 50%,
+    rgba(255, 255, 255, 0.5) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.signin-primary-button:hover,
+.signin-primary-button:active {
+  background-position: left bottom;
+  color: #5b8b5a;
+  border: 1px solid #5b8b5a;
+}
+
+.signin-form-switch-link {
+  color: rgba(28, 82, 49, 1);
+  border-bottom: 0.8px solid rgba(28, 82, 49, 0.6);
+}
+
+.signin-form-switch-link:hover,
+.signin-form-switch-link:active {
+  border-bottom: 2px solid rgba(28, 82, 49, 0.6);
+  color: rgba(28, 82, 49, 1);
+}
+
+.signin-back-to-home > a > p > span > span {
+  color: var(--secondary);
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 1200px) {
+  .signin-page-container-bg {
+    background-color: rgba(209, 226, 181, 0.6);
+  }
+
+  .signin-layout-column1 {
+    background-image: url("../../assets/images/green4.jpg");
+  }
+}

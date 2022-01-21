@@ -1,0 +1,45 @@
+.confirm-account-bg {
+  background-image: url("../../assets/images/tea2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.confirm-account-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 9rem 1rem;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  position: relative;
+}
+
+.confirm-account-container h1 {
+  font-size: 2rem;
+  color: var(--primary2);
+  margin-bottom: 2rem;
+}
+
+.confirm-account-container p {
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.confirm-account-back-to-home {
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 600px) {
+  .confirm-account-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .confirm-account-container p {
+    font-size: 1.5rem;
+  }
+  .confirm-account-container {
+    padding: 6rem 8rem;
+  }
+}

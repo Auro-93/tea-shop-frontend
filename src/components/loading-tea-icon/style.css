@@ -1,0 +1,25 @@
+/*FULL PAGE LOADER */
+
+.full-page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.circle-container {
+  border-radius: 100%;
+  background-color: rgba(236, 224, 56, 0.2);
+  padding: 6rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.tea-loading-icon,
+.spinner-custom {
+  color: var(--secondary);
+}

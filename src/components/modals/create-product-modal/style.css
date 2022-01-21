@@ -1,0 +1,68 @@
+.admin-custom-product-modal {
+  background-color: #f7f7f7;
+}
+
+@media screen and (min-width: 900px) {
+  .admin-custom-product-modal {
+    background-image: url("../../../assets/images/modal-leaf.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 40%;
+  }
+}
+input:focus,
+textarea:focus,
+.custom-checkbox:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px,
+    rgba(238, 162, 167, 0.5) 0px 0px 0px 2px !important;
+  border: none !important;
+}
+
+.admin-custom-product-modal .checkbox-container {
+  background-color: #faf3f6;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px,
+    rgba(238, 162, 167, 0.5) 0px 0px 0px 2px !important;
+  border-radius: 5px;
+  padding: 1rem;
+  height: 35rem;
+  overflow-y: auto;
+  scrollbar-color: var(--tertiary) transparent;
+}
+
+.admin-custom-product-modal .checkbox-container::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+}
+
+.custom-checkbox {
+  cursor: pointer;
+  padding: 0.6rem;
+}
+
+@media screen and (max-width: 500px) {
+  .custom-checkbox {
+    cursor: pointer;
+    padding: 0.4rem;
+  }
+  .admin-custom-product-modal .checkbox-container {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+.custom-checkbox:checked {
+  background-color: var(--secondary) !important;
+}
+
+.admin-custom-product-modal .modal-footer {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.add-product-btn {
+  padding: 0.5rem 3rem !important;
+  margin-right: 0.4rem;
+}
+
+.add-product-close-btn {
+  padding: 0.5rem 3rem;
+}

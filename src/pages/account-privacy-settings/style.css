@@ -1,0 +1,85 @@
+@media screen and (max-width: 899px) {
+  .change-privacy-settings-bg {
+    margin-bottom: 10rem;
+  }
+}
+
+.change-data-card-container {
+  padding: 4rem 0;
+  width: 100%;
+  background: rgb(246, 246, 248);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 246, 248, 1) 5%,
+    rgba(245, 240, 240, 1) 50%,
+    rgba(245, 228, 226, 0.46001103077949934) 100%
+  );
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.change-data-card-container h4 {
+  color: var(--secondary);
+  margin: 1rem 0;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid var(--secondary);
+}
+
+.form-change-data-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 3rem 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.form-change-data-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.form-change-data-container > div p {
+  font-weight: bold;
+}
+.form-change-data-container > div button {
+  width: 60%;
+}
+
+.form-change-data-container .change-pwd-link {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.change-settings-button {
+  border-radius: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0.5rem !important;
+}
+.update-settings-input {
+  padding: 0.2rem;
+  width: 150px;
+}
+
+@media screen and (min-width: 800px) {
+  .change-data-card-container {
+    width: 60%;
+  }
+  .form-change-data-container {
+    width: 90%;
+    padding: 3rem;
+  }
+  .form-change-data-container > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+  }
+}
