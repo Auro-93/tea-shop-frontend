@@ -95,7 +95,6 @@ const SignIn = () => {
       } else if (response.error === "popup_closed_by_user") {
         console.log(response);
       } else {
-        alert(response.error);
         setSigninData({
           ...signinData,
           errorMessage: "Something went wrong. Please, try again",
